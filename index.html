@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -52,12 +55,25 @@
         <div class="header">
 
             <div class="header-top">
-                <div class="search">search</div>
-                <div class="user-info">user-info</div>
+                <form action="" class="search">
+                    <label for="search"><img src="icons/magnify.svg" alt="search"></label>
+                    <input type="text" name="search" id="search">
+                </form>
+                <div class="user-info">
+                    <img src="icons/bell-ring-outline.svg" id="notifications" alt="notifications">
+                    <img src="icons/color-time.svg" id="profile-pic" alt="profile-pic">
+                    <p>Jenny Havens</p>
+                </div>
             </div>
 
             <div class="header-bottom">
-                <div class="greeting">greeting</div>
+                <div class="profile-header">
+                    <img src="icons/color-time.svg" id="main-profile-pic" alt="main-profile-pic">
+                    <div class="greeting">
+                        <p>Welcome back,</p>
+                        <p>Jenny Havens (@jennyhavens)</p>
+                    </div>
+                </div>  
                 <div class="buttons">
                     <button>New</button>
                     <button>Upload</button>
@@ -68,68 +84,129 @@
         </div>
 
         <div class="main-content">
-
             <div class="projects">
-                <div class="card">
-                    <p class="title">Project 1</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam aspernatur aperiam doloribus temporibus in nihil soluta. Sapiente voluptas sit doloremque esse, at laborum dicta ab. Perspiciatis numquam nesciunt laudantium explicabo.</p>
-                </div>
-                <div class="card">
-                    <p class="title">Project 2</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam aspernatur aperiam doloribus temporibus in nihil soluta. Sapiente voluptas sit doloremque esse, at laborum dicta ab. Perspiciatis numquam nesciunt laudantium explicabo.</p>
-                </div>
-                <div class="card">
-                    <p class="title">Project 3</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam aspernatur aperiam doloribus temporibus in nihil soluta. Sapiente voluptas sit doloremque esse, at laborum dicta ab. Perspiciatis numquam nesciunt laudantium explicabo.</p>
-                </div>
-                <div class="card">
-                    <p class="title">Project 4</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam aspernatur aperiam doloribus temporibus in nihil soluta. Sapiente voluptas sit doloremque esse, at laborum dicta ab. Perspiciatis numquam nesciunt laudantium explicabo.</p>
-                </div>
-                <div class="card">
-                    <p class="title">Project 5</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam aspernatur aperiam doloribus temporibus in nihil soluta. Sapiente voluptas sit doloremque esse, at laborum dicta ab. Perspiciatis numquam nesciunt laudantium explicabo.</p>
-                </div>
-                <div class="card">
-                    <p class="title">Project 6</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam aspernatur aperiam doloribus temporibus in nihil soluta. Sapiente voluptas sit doloremque esse, at laborum dicta ab. Perspiciatis numquam nesciunt laudantium explicabo.</p>
+                <h2>Your Projects</h2>
+                <div class="cards">
+                    <div class="card">
+                        <div class="text">
+                            <h2>Project 1</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas culpa eius, excepturi mollitia aspernatur commodi. Ex sunt libero quasi. Quisquam nulla quasi omnis accusantium ipsam sapiente vitae repellendus, numquam earum?</p>
+                        </div>
+                        <div class="card-buttons">
+                            <img src="icons/star-plus-outline.svg" alt="star">
+                            <img src="icons/eye-plus-outline.svg" alt="eye">
+                            <img src="icons/share-variant-outline.svg" alt="share">
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="text">
+                            <h3>Project 2</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas unde iusto culpa sapiente ut repellat quam incidunt labore vitae ipsum. Dolor dolores sequi, voluptas natus iusto cumque voluptatum neque sed!</p>
+                        </div>
+                        <div class="card-buttons">
+                            <img src="icons/star-plus-outline.svg" alt="star">
+                            <img src="icons/eye-plus-outline.svg" alt="eye">
+                            <img src="icons/share-variant-outline.svg" alt="share">
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="text">
+                            <h3>Project 3</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt architecto ab aut placeat similique aliquid culpa voluptas? Autem, maiores quibusdam adipisci nostrum qui perspiciatis quam neque illum unde aperiam commodi?</p>
+                        </div>
+                        <div class="card-buttons">
+                            <img src="icons/star-plus-outline.svg" alt="star">
+                            <img src="icons/eye-plus-outline.svg" alt="eye">
+                            <img src="icons/share-variant-outline.svg" alt="share">
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="text">
+                            <h3>Project 4</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, magnam. Adipisci ipsum, ipsam est sequi ullam saepe, commodi, quod pariatur vitae aut recusandae nostrum architecto enim consequuntur. Doloremque, corrupti corporis Lorem.</p>
+                        </div>
+                        <div class="card-buttons">
+                            <img src="icons/star-plus-outline.svg" alt="star">
+                            <img src="icons/eye-plus-outline.svg" alt="eye">
+                            <img src="icons/share-variant-outline.svg" alt="share">
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="text">
+                            <h3>Project 5</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio autem dignissimos totam saepe sed voluptates minus libero molestiae! Molestias aperiam fuga beatae a laboriosam voluptas iure minus nobis accusamus animi?</p>
+                        </div>
+                        <div class="card-buttons">
+                            <img src="icons/star-plus-outline.svg" alt="star">
+                            <img src="icons/eye-plus-outline.svg" alt="eye">
+                            <img src="icons/share-variant-outline.svg" alt="share">
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="text">
+                            <h3>Project 6</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad exercitationem magnam quasi illo pariatur modi debitis mollitia vel velit temporibus, corporis, explicabo voluptates eum voluptatibus laborum fugit perspiciatis delectus optio!</p>
+                        </div>
+                        <div class="card-buttons">
+                            <img src="icons/star-plus-outline.svg" alt="star">
+                            <img src="icons/eye-plus-outline.svg" alt="eye">
+                            <img src="icons/share-variant-outline.svg" alt="share">
+                        </div>
+                    </div>
                 </div>
             </div>
 
             <div class="announcements">
-                <div class="announce">
-                    <p class="name">Announcement 1</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum ad, quidem suscipit molestias delectus facilis consequuntur corporis impedit mollitia, minus, reprehenderit qui itaque laudantium non autem unde fugiat culpa cupiditate!</p>
-                </div>
-                <div class="announce">
-                    <p class="name">Announcement 2</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum ad, quidem suscipit molestias delectus facilis consequuntur corporis impedit mollitia, minus, reprehenderit qui itaque laudantium non autem unde fugiat culpa cupiditate!</p>
-                </div>
-                <div class="announce">
-                    <p class="name">Announcement 3</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum ad, quidem suscipit molestias delectus facilis consequuntur corporis impedit mollitia, minus, reprehenderit qui itaque laudantium non autem unde fugiat culpa cupiditate!</p>
+                <h2>Announcements</h2>
+                <div class="news">
+                    <div class="text">
+                        <h3>Site Maintenance</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, unde repellendus ratione sed blanditiis voluptas alias corrupti tenetur ipsum, nihil cumque! Harum iusto quia ipsam totam eveniet aspernatur. Quasi, neque.</p>
+                    </div>
+                    <div class="text">
+                        <h3>Community Share Day</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor modi vel sint ut ea, ipsa excepturi a, inventore iste tenetur explicabo omnis commodi culpa! Odio eligendi eos dolor veniam nostrum.</p>
+                     </div>
+                     <div class="text">
+                        <h3>Update Privacy Policy</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet hic rerum qui ipsum, in ullam quas! Illum accusantium dolore explicabo, in esse minima quam vel consequatur. Dicta unde cupiditate molestiae.</p>
+                    </div>
                 </div>
             </div>
 
             <div class="trending">
+                <h2>Trending</h2>
                 <div class="users">
-                    <p class="user">User 1</p>
-                    <p>Title of project</p>
+                    <div class="profile-container">
+                        <img src="icons/color-gentleman.svg" alt="user1">
+                        <div class="profile-intro">
+                            <p>@horsegent</p>
+                            <p>Business App</p>
+                        </div>
+                    </div>
+                    <div class="profile-container">
+                        <img src="icons/color-strength.svg" alt="user2">
+                        <div class="profile-intro">
+                            <p>@tallgal92</p>
+                            <p>Education Resource</p>
+                        </div>
+                    </div>
+                    <div class="profile-container">
+                        <img src="icons/color-phone-1.svg" alt="user3">
+                        <div class="profile-intro">
+                            <p>@takeitslow</p>
+                            <p>Mindfulness</p>
+                        </div>
+                    </div>
+                    <div class="profile-container">
+                        <img src="icons/color-game.svg" alt="user4">
+                        <div class="profile-intro">
+                            <p>@gamergirl</p>
+                            <p>Strategy Game</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="users">
-                    <p class="user">User 2</p>
-                    <p>Title of project</p>
-                </div>
-                <div class="users">
-                    <p class="user">User 3</p>
-                    <p>Title of project</p>
-                </div>
-                <div class="users">
-                    <p class="user">User 4</p>
-                    <p>Title of project</p>
-                </div>
-            </div>
-        
+            </div>                
         </div>
 
     </div>
