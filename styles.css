@@ -8,11 +8,11 @@
     font-style: normal;
 }
 
-/*body {
+body {
     background-color: black;
     max-width: 1800px;
     margin: auto;
-}*/
+}
 
 .container {
     display: grid;
@@ -66,7 +66,7 @@ nav {
 
 .header {
     background-color: rgb(249, 178, 249);
-    padding: 10px 30px 0px 30px;
+    padding: 10px 40px 0px 40px;
 
     display: grid;
     grid-template-rows: 1fr 2fr;
@@ -76,7 +76,7 @@ nav {
 .header-top {
     display: grid;
     grid-template-columns: 2fr 1fr;
-    gap: 150px;
+    gap: 15%;
 }
 
 .search {
@@ -89,6 +89,12 @@ nav {
     height: 40px;
     border-radius: 30px;
     border: none;
+    padding: 10px;
+    font-size: 1em;
+}
+
+.search img {
+    width: 40px;
 }
 
 #notifications {
@@ -184,7 +190,7 @@ nav {
     border-radius: 10px;
     
     display: grid;
-    grid-template-rows: auto 2fr 1fr;
+    grid-template-rows: 2fr 1fr;
 }
 
 .card p {
@@ -193,6 +199,7 @@ nav {
 
 .card-buttons {
     justify-self: end;
+    align-self: end;
 
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -233,9 +240,22 @@ nav {
     padding: 30px 20px;
 
     display: grid;
-    grid-template-rows: repeat(4, 1fr);
+    grid-template: repeat(4, 1fr);
     justify-content: center;
 }
+
+.profile-container {
+    display: grid;
+    grid-template-columns: 1fr 10fr;
+    gap: 20px;
+    align-items: center;
+}
+
+.profile-container img {
+    height: 70px;
+    width: 70px;
+}
+
 
 .announcements,
 .trending {
